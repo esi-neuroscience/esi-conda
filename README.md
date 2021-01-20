@@ -19,21 +19,21 @@ Once `conda` is up and running, you may use any of the provided YAML files
 (see [Documentation](#Documentation) for details) to set up the corresponding
 environment on your computer by performing the following steps:
 
-1. **Windows**: Open the *Anaconda Prompt* from the *Start* menu
-   **macOS**/**Linux**: open a terminal and add the `conda` command to your shell, i.e.,
-   `source /path/to/conda/etc/profile.d/conda.sh`  (for bash users)
+1. **Windows**: Open the *Anaconda Prompt* from the *Start* menu\
+   **macOS**/**Linux**: open a terminal and add the `conda` command to your shell, i.e.,\
+   `source /path/to/conda/etc/profile.d/conda.sh`  (for bash users)\
    `source /path/to/conda/etc/profile.d/conda.csh` (for csh/tcsh users)
-2. Create environment from the corresponding YAML file
+2. Create environment from the corresponding YAML file\
    `conda env create --file envs/<ENVIRONMENT>.yml`
 3. To enable interactive controls for matplotlib figures in Jupyter notebooks,
    the following additional steps are required:
-   - Activate the just created environment
+   - Activate the just created environment\
      `conda activate ENVIRONMENT`
-   - Install necessary JupyterLab extensions:
-     `jupyter labextension install @jupyter-widgets/jupyterlab-manager`
+   - Install necessary JupyterLab extensions:\
+     `jupyter labextension install @jupyter-widgets/jupyterlab-manager`\
      `jupyter labextension install jupyter-matplotlib`
-   - Use the command
-     `jupyter labextension list`
+   - Use the command\
+     `jupyter labextension list`\
      to ensure that both extensions are "enabled" and "OK"
 
 ### Testing
