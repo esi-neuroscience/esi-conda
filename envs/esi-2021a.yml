@@ -14,10 +14,10 @@ dependencies:
   - graphviz=2.42.3
   - gsl=2.6
   - h5py=2.10
-  - ipykernel=5.4.2
-  - ipympl=0.5.8
+  - ipykernel=5.3.0
+  - ipympl=0.5.6
   - ipython=7.19.0
-  - ipywidgets=7.6.1
+  - ipywidgets=7.5.1
   - jedi=0.17.2
   - jupyterlab=2.2.9
   - line_profiler=3.1.*
@@ -25,7 +25,7 @@ dependencies:
   - memory_profiler
   - mne=0.22.0
   - natsort
-  - nodejs=15.3.0
+  - nodejs=13.13.0
   - nose
   - notebook=6.1.6
   - numba
