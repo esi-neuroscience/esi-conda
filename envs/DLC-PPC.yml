@@ -1,0 +1,39 @@
+name: DLC-PPC
+channels:
+  - https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/
+  - powerai
+  - defaults
+  - conda-forge
+  - hcc
+dependencies:
+  - python-dateutil
+  - blosc
+  - ipython
+  - wheel
+  - chardet
+  - click
+  - cython
+  - filterpy
+  - ruamel.yaml >= 0.15.0
+  - imgaug
+  - lzo
+  - matplotlib >= 3.1.*
+  - numba
+  - networkx
+  - numexpr >= 2.6.2
+  - py-opencv < 4.5
+  - pandas >= 1.0.1
+  - patsy
+  - pip
+  - pyyaml
+  - setuptools
+  - scikit-image >= 0.17
+  - scikit-learn
+  - statsmodels >= 0.11
+  - tensorpack == 0.9.8
+  - tensorflow==1.15.5
+  - moviepy <= 1.0.1
+  - bayesian-optimization
+  - pip:
+    - tables >= 3.5.1
+    - git+https://github.com/esi-neuroscience/DeepLabCut.git#egg=deeplabcut
