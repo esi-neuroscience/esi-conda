@@ -96,4 +96,6 @@ This repository is structured as follows:
 - `esi-202xa`/`esi-202xb`: standard "reference" Python environment that is
   updated bi-annually. Comprises most widely used scientific computing packages
   (NumPy, SciPy, matplotlib, pandas, dask, scikit, mne etc.) in their respective
-  most recent versions.
+  most recent versions. These environments are provided for both x86 and POWER
+  architectures
+- `DLC-PPC`: environment for running DeepLabCut on POWER based on a custom fork

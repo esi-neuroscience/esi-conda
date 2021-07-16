@@ -1,0 +1,55 @@
+name: esi-2021a-ppc
+channels:
+  - https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/
+  - powerai
+  - defaults
+  - conda-forge
+dependencies:
+  - cmocean=2.*
+  - cython
+  - dask=2.25
+  - distributed=2.25
+  - descartes
+  - fftw=3.3.9
+  - h5py=2.10
+  - ipykernel=5.3.0 #!
+  - ipympl=0.7.0
+  - ipython
+  - ipywidgets=7.6.3
+  - jedi=0.17.2
+  - jupyterlab=3.0.14
+  - line_profiler
+  - matplotlib=3.3.4
+  - memory_profiler
+  - natsort
+  - nodejs=14.8.0 #!
+  - nose
+  - notebook=6.4.0
+  - numba
+  - numpy=1.20.3
+  - numpydoc
+  - oct2py=5.*
+  - pandas=1.2.5
+  - pip
+  - plotly
+  - pytest
+  - python=3.8.5
+  - scikit-image=0.18.*
+  - scikit-learn=0.24.*
+  - scipy=1.6.2
+  - seaborn
+  - shapely
+  - sphinx=3.4.*
+  - sympy=1.8
+  - tqdm
+  - widgetsnbextension=3.5.1
+  - pip:
+    - brian2==2.4.2
+    - dask-jobqueue==0.7.2
+    - graphviz==0.17
+    - gsl==0.0.3
+    - esi-acme
+    - ipdb
+    - mne==0.23.0
+    - pyfftw==0.12.0
+    - texttable
