@@ -24,7 +24,7 @@ environment on your computer by performing the following steps:
    `source /path/to/conda/etc/profile.d/conda.sh`  (for bash users)\
    `source /path/to/conda/etc/profile.d/conda.csh` (for csh/tcsh users)
 2. Create environment from the corresponding YAML file\
-   `conda env create --file envs/<ENVIRONMENT>.yml`
+   `conda env create --file envs/<ARCHITECTURE/><ENVIRONMENT>.yml`
 3. To enable interactive controls for matplotlib figures in Jupyter notebooks,
    the following additional steps are required:
    - Activate the just created environment\
