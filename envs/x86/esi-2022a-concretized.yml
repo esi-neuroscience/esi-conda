@@ -1,4 +1,4 @@
-name: esi-test
+name: esi-2022a
 channels:
   - defaults
   - conda-forge
