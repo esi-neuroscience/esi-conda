@@ -1,0 +1,19 @@
+name: jupyterhub
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - ipympl=0.9.1
+  - ipywidgets=7.7.1
+  - jupyterhub=2.3.1
+  - jupyterlab=3.4.3
+  - nbresuse=0.4.0
+  - nodejs=12.19.0
+  - pip
+  - psycopg2=2.8.6
+  - python=3.8
+  - pip:
+    - batchspawner==1.1.0
+    - etcd3=0.12.0
+    - wrapspawner==1.0.1
+    - jupyterhub-traefik-proxy==0.3.0
