@@ -1,4 +1,4 @@
-name: esi-2022a
+name: esi-test
 channels:
   - defaults
   - conda-forge
@@ -66,6 +66,7 @@ dependencies:
   - docutils=0.17.1=py38h06a4308_1
   - double-conversion=3.1.5=he6710b0_1
   - ecos=2.0.7.post1=py38h6323ea4_0
+  - edflib-python=1.0.6=pyhd8ed1ab_0
   - eigen=3.3.7=hd09550d_1
   - ensureconda=1.4.2=pyhd8ed1ab_0
   - entrypoints=0.4=pyhd8ed1ab_0
@@ -89,6 +90,7 @@ dependencies:
   - freetype=2.11.0=h70c0345_0
   - fribidi=1.0.10=h36c2ea0_0
   - fsspec=2022.3.0=py38h06a4308_0
+  - future=0.18.2=py38h578d9bd_5
   - g-ir-build-tools=1.72.0=py38h36aa614_1
   - g-ir-host-tools=1.72.0=h1def2ed_1
   - gcc_impl_linux-64=10.3.0=hf2f2afa_16
@@ -225,6 +227,7 @@ dependencies:
   - mkl_random=1.2.2=py38h51133e4_0
   - mne=0.24.0=hd8ed1ab_0
   - mne-base=0.24.0=pyhd8ed1ab_0
+  - mne-bids=0.10=pyhd8ed1ab_0
   - mock=4.0.3=pyhd3eb1b0_0
   - mpc=1.2.1=h9f54685_0
   - mpfr=4.1.0=h9202a9a_1
@@ -284,12 +287,14 @@ dependencies:
   - pugixml=1.11.4=h295c915_1
   - pure_eval=0.2.2=pyhd8ed1ab_0
   - py=1.11.0=pyhd3eb1b0_0
+  - pybv=0.7.4=pyhd8ed1ab_0
   - pycparser=2.21=pyhd3eb1b0_0
   - pydantic=1.9.1=py38h0a891b7_0
   - pydicom=2.3.0=pyh6c4a22f_0
   - pyface=7.3.0=py38h06a4308_1
   - pyfftw=0.12.0=py38h9e8fb0f_2
   - pygments=2.12.0=pyhd8ed1ab_0
+  - pymatreader=0.0.30=pyhd8ed1ab_0
   - pyopenssl=22.0.0=pyhd3eb1b0_0
   - pyparsing=3.0.4=pyhd3eb1b0_0
   - pyqt=5.12.3=py38h578d9bd_8
@@ -376,6 +381,7 @@ dependencies:
   - wrapt=1.13.3=py38h7f8727e_2
   - x264=1!152.20180806=h7b6447c_0
   - xlrd=2.0.1=pyhd3eb1b0_0
+  - xmltodict=0.13.0=pyhd8ed1ab_0
   - xorg-kbproto=1.0.7=h7f98852_1002
   - xorg-libice=1.0.10=h7f98852_0
   - xorg-libsm=1.2.2=h470a237_5
