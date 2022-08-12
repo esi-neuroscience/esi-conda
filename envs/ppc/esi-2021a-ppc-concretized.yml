@@ -229,4 +229,3 @@ dependencies:
     - pyfftw==0.12.0
     - python-graphviz==0.17
     - texttable==1.6.4
-prefix: /mnt/hpx/opt/env/python/power8/conda/envs/esi-2021a-ppc

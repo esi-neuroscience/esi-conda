@@ -241,4 +241,3 @@ dependencies:
     - mne==0.24.1
     - pyfftw==0.13.0
     - python-graphviz==0.19.1
-prefix: /mnt/hpx/opt/env/python/power8/conda/envs/esi-2021b-ppc

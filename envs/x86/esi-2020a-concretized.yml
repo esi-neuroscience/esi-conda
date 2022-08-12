@@ -282,5 +282,4 @@ dependencies:
     - colorama==0.4.3
     - ipdb==0.13.2
     - texttable==1.6.2
-prefix: /opt/conda/envs/esi-2020a
 

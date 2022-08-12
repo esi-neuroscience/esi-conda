@@ -372,4 +372,3 @@ dependencies:
   - zipp=3.6.0=pyhd3eb1b0_0
   - zlib=1.2.11=h36c2ea0_1013
   - zstd=1.4.5=h9ceee32_0
-prefix: /mnt/hpx/opt/env/python/x86_64/conda/envs/esi-2021b

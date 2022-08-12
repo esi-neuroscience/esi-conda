@@ -8,7 +8,7 @@ dependencies:
   - colorama
   - cython
   - descartes
-  - esi-acme
+  - esi-syncopy=2022.8
   - graphviz=2.*
   - gsl=2.1
   - h5py<3

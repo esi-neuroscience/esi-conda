@@ -288,4 +288,3 @@ dependencies:
     - colorama==0.4.4
     - ipdb==0.13.4
     - texttable==1.6.3
-prefix: /mnt/hpx/opt/env/python/x86_64/conda/envs/esi-2020b

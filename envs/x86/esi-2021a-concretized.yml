@@ -343,4 +343,3 @@ dependencies:
     - pyqtchart==5.12
     - pyqtwebengine==5.12.1
     - texttable==1.6.3
-prefix: /mnt/hpx/opt/env/python/x86_64/conda/envs/esi-2021a
