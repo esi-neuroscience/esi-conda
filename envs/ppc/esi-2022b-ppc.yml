@@ -1,0 +1,43 @@
+name: esi-2022b-ppc
+channels:
+  - powerai
+  - defaults
+  - conda-forge
+dependencies:
+  - cmocean=2.*
+  - cython
+  - descartes
+  - esi-acme
+  - esi-syncopy
+  - fftw
+  - gsl
+  - ipdb
+  - ipykernel=6.9.1
+  - ipympl=0.9.1
+  - ipywidgets=7.7.1
+  - jupyterlab
+  - line_profiler
+  - memory_profiler
+  - natsort
+  - nodejs=14.8.0
+  - nose
+  - numba
+  - numpydoc
+  - oct2py
+  - pip
+  - plotly
+  - pytest
+  - python=3.10
+  - scikit-image
+  - scikit-learn
+  - seaborn
+  - shapely
+  - sympy
+  - texttable
+  - widgetsnbextension=3.6.1
+  - pip:
+    - brian2
+    - graphviz
+    - mne
+    - mne-bids
+    - pyfftw

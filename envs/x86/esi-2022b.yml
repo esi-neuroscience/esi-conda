@@ -1,0 +1,36 @@
+name: esi-2022b
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - brian2
+  - cmocean=2.*
+  - descartes
+  - esi-acme
+  - esi-syncopy
+  - graphviz
+  - ipdb
+  - ipykernel=6.9.1
+  - ipympl=0.9.1
+  - ipywidgets=7.7.1
+  - jupyterlab
+  - line_profiler
+  - memory_profiler
+  - mne
+  - mne-bids
+  - natsort
+  - nodejs=14.8.0
+  - nose
+  - numpydoc
+  - oct2py
+  - pip
+  - plotly
+  - pydantic
+  - pyfftw
+  - pynwb
+  - pytest
+  - python=3.10
+  - scikit-bio
+  - shapely
+  - texttable
+  - widgetsnbextension=3.6.1
