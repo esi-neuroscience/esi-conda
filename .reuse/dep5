@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: esi-conda
+Upstream-Contact: Stefan Fuertinger <stefan.fuertinger@esi-frankfurt.de>
+Source: https://github.com/esi-neuroscience/esi-conda
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...

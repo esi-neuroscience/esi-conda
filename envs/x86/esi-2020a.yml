@@ -1,3 +1,9 @@
+#
+# Copyright (c) 2023 Ernst Strüngmann Institute (ESI) for Neuroscience
+# in Cooperation with Max Planck Society
+#
+# SPDX-License-Identifier: CC-BY-NC-SA-1.0
+#
 name: esi-2020a
 channels:
   - defaults
@@ -28,7 +34,7 @@ dependencies:
   - nose
   - notebook=6.0.3
   - numba
-  - numpy=1.18.1 
+  - numpy=1.18.1
   - numpydoc
   - oct2py=5.*
   - pandas=1.0.3

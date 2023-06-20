@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 Ernst Strüngmann Institute (ESI) for Neuroscience
+in Cooperation with Max Planck Society
+SPDX-License-Identifier: CC-BY-NC-SA-1.0
+-->
+
 # Centrally-Managed conda Environments on the ESI HPC Cluster
 
 ESI IT provides a set of pre-configured `conda` environments for
