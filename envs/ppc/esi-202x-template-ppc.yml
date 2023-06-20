@@ -1,0 +1,46 @@
+name: esi-2023a-test
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - brian2
+  - cmocean=2.*
+  - descartes
+  - esi-acme
+  - esi-syncopy
+  - graphviz
+  - ipdb
+  - ipykernel=6.9.1
+  - ipympl=0.9.1
+  - ipywidgets=7.7.1
+  - jupyterlab
+  - line_profiler
+  - memory_profiler
+  - natsort
+  - nodejs=14.8.0
+  - nose
+  - numpydoc
+  - oct2py
+  - opencv
+  - pip
+  - plotly
+  - pydantic
+  - pyfftw
+  - pytest
+  - python=3.10
+  - scikit-image
+  - scikit-learn
+  - texttable
+  - widgetsnbextension=3.6.1
+  - pip:
+    - brian2
+    - bycycle
+    - mne
+    - mne-bids
+    - neo
+    - nipype
+    - nitime
+    - pynwb
+    - scikit-bio
+    - scikit-learn-intelex; platform_machine == "x86_64"
+    - spikeinterface[full]
