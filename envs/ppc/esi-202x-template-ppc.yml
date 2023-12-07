@@ -9,7 +9,6 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - brian2
   - cmocean=2.*
   - descartes
   - esi-acme
