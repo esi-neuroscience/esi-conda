@@ -7,3 +7,6 @@
 
 # Editor-related
 .vscode
+
+# Jupyter notebook clutter
+.ipynb_checkpoints/
