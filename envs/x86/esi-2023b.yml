@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: CC-BY-NC-SA-1.0
 #
-name: esi-2023b-test2
+name: esi-2023b
 channels:
   - defaults
   - conda-forge
