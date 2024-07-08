@@ -1,0 +1,55 @@
+#
+# Copyright (c) 2023 Ernst Strüngmann Institute (ESI) for Neuroscience
+# in Cooperation with Max Planck Society
+#
+# SPDX-License-Identifier: CC-BY-NC-SA-1.0
+#
+
+name: esi-2024a-ppc
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11.*
+  - ipywidgets=7.8.*
+  - widgetsnbextension=3.6.*
+  - ipykernel=6.25.*
+  - pip
+  - cmocean=4.*
+  - descartes=1.1*
+  - esi-acme=2023.12
+  - graphviz=2.50.*
+  - h5py=3.9.*
+  - ipdb=0.13.*
+  - ipympl=0.9.*
+  - jupyterlab=3.6.*
+  - line_profiler=4.1.*
+  - lxml=4.9.*
+  - memory_profiler=0.58.*
+  - natsort=8.4.*
+  - nodejs=18.*
+  - nose=1.3.*
+  - numba=0.58.*
+  - numpydoc=1.5.*
+  - oct2py=5.7.*
+  - opencv=4.7.*
+  - plotly=5.9.*
+  - pydantic=1.10.*
+  - pyfftw=0.13.*
+  - pytest=7.4.*
+  - scikit-image=0.20.*
+  - scikit-learn=1.3.*
+  - scipy=1.11.*
+  - texttable=1.6.*
+  - pip:
+    - brian2==2.7.*
+    - bycycle==1.1.*
+    - esi-syncopy==2023.9
+    - mne==1.7.*
+    - mne-bids==0.15.*
+    - neo==0.13.*
+    - nipype==1.8.*
+    - nitime==0.11.*
+    - pynwb==2.8.*
+    - spikeinterface[full]==0.100.*
+    - scikit-bio==0.6.*
