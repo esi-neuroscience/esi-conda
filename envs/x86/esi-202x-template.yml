@@ -1,26 +1,26 @@
 #
-# Copyright (c) 2023 Ernst Strüngmann Institute (ESI) for Neuroscience
+# Copyright (c) 2024 Ernst Strüngmann Institute (ESI) for Neuroscience
 # in Cooperation with Max Planck Society
 #
 # SPDX-License-Identifier: CC-BY-NC-SA-1.0
 #
-name: esi-2023a-test
+name: esi-2024a-test
 channels:
   - defaults
   - conda-forge
 dependencies:
-  - brian2
+  # - brian2
   - cmocean=2.*
   - descartes
   - esi-acme
   - esi-syncopy
   - graphviz
   - ipdb
-  - ipykernel=6.9.1
+  - ipykernel#=6.9.1
   - ipympl=0.9.1
   - ipywidgets=7.7.1
   - jupyterlab
-  - line_profiler
+  # - line_profiler
   - memory_profiler
   - mne
   - mne-bids
@@ -31,14 +31,14 @@ dependencies:
   - nose
   - numpydoc
   - oct2py
-  - opencv
+  # - opencv
   - pip
   - plotly
   - pydantic
   - pyfftw
   - pynwb
   - pytest
-  - python=3.10
+  - python=3.12
   - scikit-bio
   - shapely
   - texttable
