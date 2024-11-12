@@ -48,4 +48,4 @@ dependencies:
     - nitime==0.9
     - pynwb==2.8.*
     - spikeinterface[full]==0.97.*
-    #- scikit-bio==0.5 
+    #- scikit-bio==0.6 --no-deps 
