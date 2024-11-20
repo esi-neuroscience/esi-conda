@@ -37,6 +37,7 @@ dependencies:
   - scipy=1.14.*
   - texttable=1.7.*
   - numcodecs=0.13.*
+  - biom-format=2.1.*
   - pip:
     - zarr==2.18.*
     - brian2==2.5
@@ -48,4 +49,5 @@ dependencies:
     - nitime==0.9
     - pynwb==2.8.*
     - spikeinterface[full]==0.97.*
-    #- scikit-bio==0.6 --no-deps 
+    - hdmedians==0.14.*
+    - scikit-bio==0.6

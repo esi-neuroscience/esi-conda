@@ -1,4 +1,4 @@
-name: esi-2024b_ppc_test2
+name: esi-2024b-ppc
 channels:
   - https://ftp.osuosl.org/pub/open-ce/1.10.0
   - https://opence.mit.edu
@@ -38,6 +38,7 @@ dependencies:
   - azure-storage-files-datalake-cpp=12.12.0=h5170b40_1
   - babel=2.16.0=pyhd8ed1ab_0
   - beautifulsoup4=4.12.3=pyha770c72_0
+  - biom-format=2.1.16=py312h2984477_2
   - bleach=6.2.0=pyhd8ed1ab_0
   - blosc=1.21.6=hc72474a_0
   - bokeh=3.6.1=pyhd8ed1ab_0
@@ -62,7 +63,7 @@ dependencies:
   - colorama=0.4.6=pyhd8ed1ab_0
   - colorspacious=1.1.2=pyh24bf2e0_0
   - comm=0.2.2=pyhd8ed1ab_0
-  - contourpy=1.3.0=py312hc0892ed_2
+  - contourpy=1.3.1=py312hc0892ed_0
   - cycler=0.12.1=pyhd8ed1ab_0
   - cytoolz=1.0.0=py312he7221a8_1
   - dask=2023.12.0=pyhd8ed1ab_0
@@ -87,7 +88,7 @@ dependencies:
   - fontconfig=2.15.0=hb048c60_1
   - fonts-conda-ecosystem=1=0
   - fonts-conda-forge=1=0
-  - fonttools=4.54.1=py312h362f93a_1
+  - fonttools=4.55.0=py312h362f93a_0
   - fqdn=1.5.1=pyhd8ed1ab_0
   - freeglut=3.2.2=h0254b09_3
   - freetype=2.12.1=h5baba08_2
@@ -108,7 +109,7 @@ dependencies:
   - harfbuzz=9.0.0=h9bdfd76_1
   - hdf5=1.14.3=nompi_h259430e_105
   - hpack=4.0.0=pyh9f0ad1d_0
-  - httpcore=1.0.6=pyhd8ed1ab_0
+  - httpcore=1.0.7=pyh29332c3_1
   - httpx=0.27.2=pyhd8ed1ab_0
   - hyperframe=6.0.1=pyhd8ed1ab_0
   - icu=75.1=h5867af4_0
@@ -144,7 +145,7 @@ dependencies:
   - jupyter_events=0.10.0=pyhd8ed1ab_0
   - jupyter_server=2.14.2=pyhd8ed1ab_0
   - jupyter_server_terminals=0.5.3=pyhd8ed1ab_0
-  - jupyterlab=4.2.5=pyhd8ed1ab_0
+  - jupyterlab=4.2.6=pyhff2d567_0
   - jupyterlab_pygments=0.3.0=pyhd8ed1ab_1
   - jupyterlab_server=2.27.3=pyhd8ed1ab_0
   - jupyterlab_widgets=1.1.11=pyhd8ed1ab_0
@@ -175,7 +176,9 @@ dependencies:
   - libcrc32c=1.1.2=h3b9df90_0
   - libcurl=8.10.1=h9c4a7dd_0
   - libdeflate=1.22=h190368a_0
+  - libdrm=2.4.123=h190368a_0
   - libedit=3.1.20191231=h41a240f_2
+  - libegl=1.7.0=h5d83ef4_2
   - libev=4.33=ha17a0cc_2
   - libevent=2.1.12=h3507d20_1
   - libexpat=2.6.4=h2621725_0
@@ -187,8 +190,11 @@ dependencies:
   - libgfortran=14.2.0=hfdc3801_1
   - libgfortran-ng=14.2.0=hfdc3801_1
   - libgfortran5=14.2.0=hd761307_1
+  - libgl=1.7.0=h5d83ef4_2
   - libglib=2.82.2=h3d6172d_0
-  - libglu=9.0.0=h0254b09_1004
+  - libglu=9.0.3=h0a402d4_0
+  - libglvnd=1.7.0=h5d83ef4_2
+  - libglx=1.7.0=h5d83ef4_2
   - libgomp=14.2.0=h31e42bb_1
   - libgoogle-cloud=2.30.0=h6f00c90_0
   - libgoogle-cloud-storage=2.30.0=he397249_0
@@ -206,6 +212,7 @@ dependencies:
   - libopencv=4.10.0=headless_py312hc859e15_7
   - libopus=1.3.1=h4e0d66e_1
   - libparquet=18.0.0=hbb1f141_0_cpu
+  - libpciaccess=0.18=ha17a0cc_0
   - libpng=1.6.44=hf507151_0
   - libprotobuf=5.27.5=he38c6e4_2
   - libre2-11=2024.07.02=hf9f062a_1
@@ -224,7 +231,7 @@ dependencies:
   - libwebp-base=1.4.0=ha17a0cc_0
   - libxcb=1.17.0=he4e7c97_0
   - libxcrypt=4.4.36=ha17a0cc_1
-  - libxml2=2.13.4=hecf1bb1_2
+  - libxml2=2.13.5=hecf1bb1_0
   - libxslt=1.1.39=hfc4afe9_0
   - libzlib=1.3.1=h190368a_2
   - libzopfli=1.0.3=h3b9df90_0
@@ -248,7 +255,7 @@ dependencies:
   - nbformat=5.10.4=pyhd8ed1ab_0
   - ncurses=6.5=hd444e8b_1
   - nest-asyncio=1.6.0=pyhd8ed1ab_0
-  - networkx=3.4.2=pyhd8ed1ab_1
+  - networkx=3.4.2=pyh267e887_2
   - nodejs=16.20.2=h8acac1c_3
   - nose=1.3.7=py_1006
   - notebook=7.2.2=pyhd8ed1ab_0
@@ -266,7 +273,7 @@ dependencies:
   - openssl=3.4.0=h190368a_0
   - orc=2.0.2=h35ef41e_1
   - overrides=7.7.0=pyhd8ed1ab_0
-  - packaging=24.1=pyhd8ed1ab_0
+  - packaging=24.2=pyhff2d567_1
   - pandas=2.2.2=py312h02d5238_1
   - pandocfilters=1.5.0=pyhd8ed1ab_0
   - pango=1.54.0=h9d02b67_1
@@ -282,7 +289,7 @@ dependencies:
   - platformdirs=4.3.6=pyhd8ed1ab_0
   - plotly=5.24.1=pyhd8ed1ab_0
   - pluggy=1.5.0=pyhd8ed1ab_0
-  - portalocker=2.10.1=py312h2344ed7_1
+  - portalocker=3.0.0=py312h2344ed7_0
   - prometheus_client=0.21.0=pyhd8ed1ab_0
   - prompt-toolkit=3.0.48=pyha770c72_0
   - psutil=6.1.0=py312h2984477_0
@@ -302,7 +309,7 @@ dependencies:
   - pysocks=1.7.1=pyha2e5f31_6
   - pytest=8.3.3=pyhd8ed1ab_0
   - python=3.12.7=hd2725b4_0_cpython
-  - python-dateutil=2.9.0=pyhd8ed1ab_0
+  - python-dateutil=2.9.0.post0=pyhff2d567_0
   - python-fastjsonschema=2.20.0=pyhd8ed1ab_0
   - python-json-logger=2.0.7=pyhd8ed1ab_0
   - python-tzdata=2024.2=pyhd8ed1ab_0
@@ -325,7 +332,7 @@ dependencies:
   - scikit-learn=1.5.2=py312h5cdbbcc_1
   - scipy=1.14.1=py312h129fb89_1
   - send2trash=1.8.3=pyh0d859eb_0
-  - setuptools=75.3.0=pyhd8ed1ab_0
+  - setuptools=75.5.0=pyhff2d567_0
   - six=1.16.0=pyh6c4a22f_0
   - snappy=1.2.1=h0c9a444_0
   - sniffio=1.3.1=pyhd8ed1ab_0
@@ -351,7 +358,7 @@ dependencies:
   - tinycss2=1.4.0=pyhd8ed1ab_0
   - tk=8.6.13=hd4bbf49_0
   - toml=0.10.2=pyhd8ed1ab_0
-  - tomli=2.0.2=pyhd8ed1ab_0
+  - tomli=2.1.0=pyhff2d567_0
   - toolz=1.0.0=pyhd8ed1ab_0
   - tornado=6.4.1=py312he7221a8_1
   - tqdm=4.67.0=pyhd8ed1ab_0
@@ -376,17 +383,18 @@ dependencies:
   - xorg-libsm=1.2.4=h9be89da_1
   - xorg-libx11=1.8.10=h67a18fa_0
   - xorg-libxau=1.0.11=h190368a_1
+  - xorg-libxdamage=1.1.6=h190368a_0
   - xorg-libxdmcp=1.1.5=h190368a_0
   - xorg-libxext=1.3.6=h190368a_0
   - xorg-libxfixes=6.0.1=h190368a_0
   - xorg-libxi=1.8.2=h190368a_0
   - xorg-libxrender=0.9.11=h190368a_1
-  - xorg-xextproto=7.3.0=h190368a_1004
+  - xorg-libxxf86vm=1.1.5=h190368a_4
   - xorg-xorgproto=2024.1=h190368a_1
   - xyzservices=2024.9.0=pyhd8ed1ab_0
   - xz=5.2.6=hb283c62_0
   - yaml=0.2.5=h4e0d66e_2
-  - zeromq=4.3.5=ha30388d_6
+  - zeromq=4.3.5=ha30388d_7
   - zfp=1.0.1=h2621725_2
   - zict=3.0.0=pyhd8ed1ab_0
   - zipp=3.21.0=pyhd8ed1ab_0
@@ -395,6 +403,7 @@ dependencies:
   - zstandard=0.23.0=py312h3e12cc9_1
   - zstd=1.5.6=h03a2076_0
   - pip:
+      - acres==0.1.0
       - asciitree==0.3.3
       - brian2==2.5
       - bycycle==1.1.0
@@ -404,6 +413,7 @@ dependencies:
       - etelemetry==0.3.1
       - fasteners==0.19
       - filelock==3.16.1
+      - hdmedians==0.14.2
       - hdmf==3.14.5
       - isodate==0.6.1
       - looseversion==1.3.0
@@ -413,7 +423,7 @@ dependencies:
       - neo==0.13.4
       - neurodsp==2.2.1
       - nibabel==5.3.2
-      - nipype==1.9.0
+      - nipype==1.9.1
       - nitime==0.9
       - pooch==1.8.2
       - probeinterface==0.2.24
@@ -425,10 +435,11 @@ dependencies:
       - rdflib==6.3.2
       - ruamel-yaml==0.18.6
       - ruamel-yaml-clib==0.2.12
+      - scikit-bio==0.6.0
       - simplejson==3.19.3
       - spikeinterface==0.97.0
       - sympy==1.13.3
       - traits==6.4.3
       - xarray==2024.10.0
       - zarr==2.18.3
-prefix: /gs/home/reillys/.conda/envs_ppc/esi-2024b_ppc_test2
+prefix: /gs/home/reillys/.conda/envs_ppc/esi-2024b-ppc
