@@ -1,0 +1,39 @@
+name: esi-2024b
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.*
+  - pip=24.3.*
+  - mne=1.8.*
+  - brian2=2.7.*
+  - cmocean=4.0.*
+  - descartes=1.1.*
+  - esi-acme=2023.12
+  - graphviz=12.0.*
+  - ipdb=0.13.*
+  - ipykernel=6.29.*
+  - ipympl=0.9.*
+  - ipywidgets=7.8.*
+  - widgetsnbextension=3.6.*
+  - jupyterlab=4.3.*
+  - line_profiler=4.1.*
+  - memory_profiler=0.61.*
+  - opencv=4.10.*
+  - mne-bids=0.15.*
+  - natsort=8.4.*
+  - nitime=0.11.*
+  - nodejs=22.11.*
+  - numpydoc=1.8.*
+  - oct2py=5.7.*
+  - plotly=5.24.*
+  - pydantic=2.10.*
+  - pynwb=2.8.*
+  - pytest=8.3.*
+  - scikit-bio=0.6.*
+  - shapely=2.0.*
+  - texttable=1.7.*
+  - pip:
+    - bycycle==1.1.*
+    - neo==0.13.*
+    - scikit-learn-intelex==2025.0.*
+    - spikeinterface==0.101.*
