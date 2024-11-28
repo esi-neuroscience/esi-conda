@@ -1,6 +1,5 @@
 name: esi-2024b-ppc
 channels:
-  - https://ftp.osuosl.org/pub/open-ce/1.10.0
   - https://opence.mit.edu
   - https://ftp.osuosl.org/pub/open-ce/1.10.0/
   - conda-forge
