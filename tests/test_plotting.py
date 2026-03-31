@@ -1,8 +1,9 @@
 #
 # Check most basic interactive plotting functionality
 #
-# Copyright © 2024 Ernst Strüngmann Institute (ESI) for Neuroscience
+# Copyright © 2024-2025 Ernst Strüngmann Institute (ESI) for Neuroscience
 # in Cooperation with Max Planck Society
+# Copyright (c) 2026 Ernst Strüngmann Institute (ESI) of the Max Planck Society
 #
 # SPDX-License-Identifier: CC-BY-NC-SA-1.0
 #

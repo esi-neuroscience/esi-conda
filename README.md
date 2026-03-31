@@ -1,6 +1,7 @@
 <!--
-SPDX-FileCopyrightText: 2024 Ernst Strüngmann Institute (ESI) for Neuroscience
+SPDX-FileCopyrightText: 2024-2025 Ernst Strüngmann Institute (ESI) for Neuroscience
 in Cooperation with Max Planck Society
+SPDX-FileCopyrightText: 2026 Ernst Strüngmann Institute (ESI) of the Max Planck Society
 SPDX-License-Identifier: CC-BY-NC-SA-1.0
 -->
 
