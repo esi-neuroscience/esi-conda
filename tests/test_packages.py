@@ -25,13 +25,13 @@ def test_packages():
 
 def test_imports():
 
-    # We only do this for the current neuro-conda environment
-    ncDir = pathlib.Path(__file__).resolve().parents[1]
+    # We only do this for the current esi-conda environment
+    ecDir = pathlib.Path(__file__).resolve().parents[1]
     current_machine = platform.machine()
     if current_machine == "ppc64le":
-        envFile = ncDir / "envs" / "ppc" / "latest.yml"
+        envFile = ecDir / "envs" / "ppc" / "latest.yml"
     else:
-        envFile = ncDir / "envs" / "x86" / "latest.yml"
+        envFile = ecDir / "envs" / "x86" / "latest.yml"
 
     with open(envFile, "r", encoding="utf-8") as ymlFile:
         ymlDict = yaml.safe_load(ymlFile)
