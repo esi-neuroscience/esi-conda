@@ -1,4 +1,4 @@
-#!~/.local/miniconda3/envs/neuroconda
+#!~/.local/miniconda3/envs/esi-conda
 #
 # Central pytest configuration
 #
