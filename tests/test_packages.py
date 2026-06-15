@@ -37,7 +37,7 @@ def test_imports():
         ymlDict = yaml.safe_load(ymlFile)
 
     # Don't attempt to import these packages
-    ignorePkgs = ["python", "r-", "pip", "pytest","hdf5","oct2py","sphinx","zarr","hdmedians","statsmodels"]
+    ignorePkgs = ["python", "r-", "pip", "pytest","hdf5","oct2py","sphinx","zarr","hdmedians","statsmodels","nodejs"]
 
      
     # Packages whose name does not correspond to their Python module name
