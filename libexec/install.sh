@@ -2,7 +2,7 @@
 #
 # Install conda + env in macOS + Linux
 #
-# This script is loosely based on the Homebrew installer (albeit heavliy truncated):
+# This script is loosely based on the Homebrew installer (albeit heavily truncated):
 # https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 
 # TODO:
