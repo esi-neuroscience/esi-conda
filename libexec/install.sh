@@ -123,7 +123,12 @@ CondaInstallationDirectory="${HOME}/.local/miniforge3"
 CondaDownloadDirectory="${HOME}/.local/downloads"
 CondaDownloadTarget="${CondaDownloadDirectory}/miniforge.sh"
 
-if
+
+if [[ "${mArch}" == "ppc64le" ]]; then
+  ESICondaLatestUrl="https://raw.githubusercontent.com/esi-neuroscience/esi-conda/main/envs/ppc/latest.yml"
+  ESICondaLatestTarget="${CondaDownloadDirectory}/latest.yml"
+  ESICondaFile="latest.yml"
+else
   ESICondaLatestUrl="https://raw.githubusercontent.com/esi-neuroscience/esi-conda/main/envs/x86/latest.yml"
   ESICondaLatestTarget="${CondaDownloadDirectory}/latest.yml"
   ESICondaFile="latest.yml"
