@@ -4,8 +4,7 @@ on: [push]
 env:
   ncDebug: 1
   ncCI: 1
-  ecEnv_x86: esi-2026a
-  ecEnv_ppc: esi-2026a-ppc
+  ecEnv_x86: esi-2025b
 jobs:
   Test-Install:
     name: Install python, ${{ matrix.os }})

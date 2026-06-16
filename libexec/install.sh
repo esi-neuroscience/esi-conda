@@ -294,7 +294,11 @@ debug "Updated conda itself"
 info "Creating latest esi-conda environment"
 if [[ ! -f "${ESICondaLatestTarget}" ]]; then
   if [[ ! -z "${ncCI-}" ]]; then
-    execute "cp" "./envs/${ESICondaFile}" "${ESICondaLatestTarget}"
+    if [[ "${mArch}" == "ppc64le" ]]; then
+      execute "cp" "./envs/ppc/${ESICondaFile}" "${ESICondaLatestTarget}"
+    else
+      execute "cp" "./envs/x86/${ESICondaFile}" "${ESICondaLatestTarget}"
+    fi
     debug "Copied local repository version of latest environment file to ${ESICondaLatestTarget}"
   else
     execute "curl" "-fsSL" "${ESICondaLatestUrl}" "-o" "${ESICondaLatestTarget}"
