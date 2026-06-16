@@ -59,7 +59,7 @@ If (-not $Env:ncNoninteractive) {
 }
 
 # If deletion candidate does not contain a esi-conda environment, ask for confirmation...
-If (conda env list | Select-String -Pattern "esi-conda") {
+If (conda env list | Select-String -Pattern "esi-") {
     Write-Debug "Found esi-conda environment in $CondaInstallationDirectory"
 }
 Else {
