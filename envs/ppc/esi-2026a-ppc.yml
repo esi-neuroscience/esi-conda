@@ -1,0 +1,62 @@
+#
+# Copyright (c) 2026 Ernst Strüngmann Institute (ESI) of the Max Planck Society
+#
+# SPDX-License-Identifier: CC-BY-NC-SA-1.0
+#
+name: esi-2026a-ppc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.*
+  - pip=26.1.*
+  - brian2=2.10.*
+  - cmocean=4.0.*
+  - cython=3.2.*
+  - descartes=1.1.*
+  - esi-acme=2026.6.*
+  - graphviz=14.1.*
+  - h5py=3.16.*
+  - ipdb=0.13.*
+  - ipympl=0.10.*
+  - ipywidgets=8.1.*
+  - jupyterlab=4.5.*
+  - jupyterhub=5.5.*
+  - line_profiler=5.0.*
+  - lxml=6.1.*
+  - memory_profiler=0.61.*
+  - natsort=8.4.*
+  - nodejs=12.4.*
+  - numba=0.65.*
+  - numpydoc=1.10.*
+  - oct2py=6.0.*
+  - opencv=4.13.*
+  - pandas=3.0.*
+  - plotly=6.8.*
+  - pydantic=2.13.*
+  - pyfftw=0.15.*
+  - pytest=9.0.*
+  - scikit-image=0.26.*
+  - scikit-learn=1.9.*
+  - scipy=1.17.*
+  - seaborn=0.13.*
+  - shapely=2.1.*
+  - sphinx=9.1.*
+  - sympy=1.14.*
+  - texttable=1.7.*
+  - widgetsnbextension=4.0.*
+  - biom-format=2.1.*
+  - numcodecs=0.16.*
+  - numpy=2.4.*
+  - pynwb=3.1.*
+  - hdmedians=0.14.*
+  - nitime=0.12.*
+  - zarr=3.2.*
+  - statsmodels=0.14.*
+  - pip:
+    - bycycle==1.2.*
+    - mne==1.12.*
+    - mne-bids==0.19.*
+    - nipype==1.11.*
+    - neo==0.14.*
+    - scikit-bio==0.7.*
+    - marimo==0.23.*
