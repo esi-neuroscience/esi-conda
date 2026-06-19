@@ -1,0 +1,59 @@
+#
+# Copyright (c) 2024-2025 Ernst Strüngmann Institute (ESI) for Neuroscience
+# in Cooperation with Max Planck Society
+# Copyright (c) 2026 Ernst Strüngmann Institute (ESI) of the Max Planck Society
+#
+# SPDX-License-Identifier: CC-BY-NC-SA-1.0
+#
+name: esi-2026a-x86-test2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.14.*
+  - pip=26.1.*
+  - brian2=2.10.*
+  - cmocean=4.0.*
+  - descartes=1.1.*
+  - esi-acme=2026.6.*
+  - graphviz=14.1.*
+  - h5py=3.16.*
+  - ipdb=0.13.*
+  - ipympl=0.10.*
+  - ipywidgets=8.1.*
+  - jupyterhub=5.5.*
+  - jupyterlab=4.5.*
+  - line_profiler=5.0.*
+  - lxml=6.1.*
+  - memory_profiler=0.61.*
+  - mne=1.12.*
+  - mne-bids=0.19.*
+  - nipype=1.10.*
+  - natsort=8.4.*
+  - nodejs=26.3.*
+  - numba=0.65.*
+  - numpydoc=1.10.*
+  - oct2py=6.0.*
+  - opencv=4.13.*
+  - pandas=3.0.*
+  - plotly=6.8.*
+  - pydantic=2.13.*
+  - pyfftw=0.15.*
+  - pynwb=3.1.*
+  - pytest=9.0.*
+  - scikit-bio=0.7.*
+  - scipy=1.17.*
+  - seaborn=0.13.*
+  - shapely=2.1.*
+  - sympy=1.14.*
+  - texttable=1.7.*
+  - widgetsnbextension=4.0.*
+
+  - pip:
+
+    - bycycle==1.2.*
+    - neo==0.14.*
+    - nitime==0.12.* ; platform_system != "Darwin"
+    - scikit-learn-intelex==2026.1.* ; platform_system == "Linux"
+    - scikit-image==0.26.* 
+    - scikit-learn==1.9.* ; platform_machine == "x86_64" and platform_system != "Darwin"
+    - marimo==0.23.*
