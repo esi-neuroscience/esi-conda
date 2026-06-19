@@ -5,7 +5,7 @@
 #
 # SPDX-License-Identifier: CC-BY-NC-SA-1.0
 #
-name: esi-2026a-x86-test2
+name: esi-2026a
 channels:
   - conda-forge
 dependencies:
