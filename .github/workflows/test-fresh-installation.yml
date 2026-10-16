@@ -35,6 +35,4 @@ jobs:
           post-cleanup: 'all'
       - name: Activate environment ${{ env.ecEnv_x86 }} and run tests on ${{ matrix.os }}
         run: |
-          micromamba activate ${{ env.ecEnv_x86 }}
-          pytest -sv
-          micromamba deactivate
+          micromamba run -n ${{ env.ecEnv_x86 }} pytest -sv
