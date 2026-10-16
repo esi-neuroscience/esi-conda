@@ -16,9 +16,9 @@ jobs:
           - os: windows-latest
             use_shell : pwsh
           - os: macos-latest
-            use_shell : zsh
+            use_shell : zsh -l {0}
           - os: ubuntu-latest
-            use_shell : bash
+            use_shell : bash -l {0}
     steps:
       - name: Free Disk Space (Ubuntu)        
         if: runner.os == 'Linux'
@@ -34,4 +34,7 @@ jobs:
           environment-file: ${{ env.ecEnv_file }}
           post-cleanup: 'all'
       - name: Activate environment ${{ env.ecEnv_x86 }} and run tests on ${{ matrix.os }}
-        run: pytest -sv
+        run: |
+          micromamba activate ${{ env.ecEnv_x86 }}
+          pytest -sv
+          micromamba deactivate
