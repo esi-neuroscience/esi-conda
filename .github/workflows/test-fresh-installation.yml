@@ -34,8 +34,4 @@ jobs:
           environment-file: ${{ env.ecEnv_file }}
           post-cleanup: 'all'
       - name: Activate environment ${{ env.ecEnv_x86 }} and run tests on ${{ matrix.os }}
-        run: |
-          ${{ matrix.prepare_shell }}
-          micromamba activate ${{ env.ecEnv_x86 }}
-          pytest -sv
-          micromamba deactivate ${{ env.ecEnv_x86 }}
+        run: pytest -sv
