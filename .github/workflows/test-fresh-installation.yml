@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is running tests
 on: [push]  
 env:
   ecEnv_x86: esi-2026a
+  ecEnv_file: esi-2026a.yml
 jobs:
   Test-Install:
     name: Test Environment on ${{ matrix.os }})
@@ -30,7 +31,7 @@ jobs:
       - name: Using Minimamba
         uses: mamba-org//setup-micromamba@v3
         with:
-          environment-file: ${{ env.ecEnv_x86 }}
+          environment-file: ${{ ecEnv_file }}
           post-cleanup: 'all'
       - name: Activate environment ${{ env.ecEnv_x86 }} and run tests on ${{ matrix.os }}
         run: |
