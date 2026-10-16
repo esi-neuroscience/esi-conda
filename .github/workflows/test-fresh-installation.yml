@@ -1,0 +1,38 @@
+name: Test Installation
+run-name: ${{ github.actor }} is running tests
+on: [push]  
+env:
+  ecEnv_x86: esi-2026a
+  ecEnv_file: ./envs/x86/esi-2026a.yml
+jobs:
+  Test-Install:
+    name: Test Environment on ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ "macos-latest", "windows-latest", "ubuntu-latest"]
+        include:
+          - os: windows-latest
+            use_shell : pwsh
+          - os: macos-latest
+            use_shell : zsh -l {0}
+          - os: ubuntu-latest
+            use_shell : bash -l {0}
+    steps:
+      - name: Free Disk Space (Ubuntu)        
+        if: runner.os == 'Linux'
+        run: |
+          sudo rm -rf "/usr/local/share/boost"
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+          sudo rm -rf /usr/share/dotnet
+      - name: Download repository
+        uses: actions/checkout@v3
+      - name: Using Minimamba
+        uses: mamba-org/setup-micromamba@v3
+        with:
+          environment-file: ${{ env.ecEnv_file }}
+          post-cleanup: 'all'
+      - name: Activate environment ${{ env.ecEnv_x86 }} and run tests on ${{ matrix.os }}
+        run: |
+          micromamba run -n ${{ env.ecEnv_x86 }} pytest -sv
