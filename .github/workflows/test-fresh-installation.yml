@@ -5,7 +5,7 @@ env:
   ecEnv_x86: esi-2026a
 jobs:
   Test-Install:
-    name: Install python, ${{ matrix.os }})
+    name: Test Environment on ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -13,23 +13,11 @@ jobs:
         os: [ "macos-latest", "windows-latest", "ubuntu-latest"]
         include:
           - os: windows-latest
-            install_script: .\libexec\install.ps1
-            uninstall_script: .\libexec\uninstall.ps1
             use_shell : pwsh
-            prepare_shell: Invoke-Expression "$Env:userprofile\miniforge3\shell\condabin\conda-hook.ps1"
           - os: macos-latest
-            install_script: ./libexec/install.sh
-            uninstall_script: ./libexec/uninstall.sh
-            use_shell : zsh -il {0}
-            prepare_shell: source ~/.zshrc
+            use_shell : zsh
           - os: ubuntu-latest
-            install_script: ./libexec/install.sh
-            uninstall_script: ./libexec/uninstall.sh
-            use_shell : bash -il {0}
-            prepare_shell: source ~/.bashrc
-    defaults:
-      run:
-        shell: ${{ matrix.use_shell }}
+            use_shell : bash
     steps:
       - name: Free Disk Space (Ubuntu)        
         if: runner.os == 'Linux'
@@ -39,6 +27,11 @@ jobs:
           sudo rm -rf /usr/share/dotnet
       - name: Download repository
         uses: actions/checkout@v3
+      - name: Using Minimamba
+        uses: mamba-org//setup-micromamba@v3
+        with:
+          environment-file: ${{ env.ecEnv_x86 }}
+          post-cleanup: 'all'
       - name: Activate environment ${{ env.ecEnv_x86 }} and run tests on ${{ matrix.os }}
         run: |
           ${{ matrix.prepare_shell }}
