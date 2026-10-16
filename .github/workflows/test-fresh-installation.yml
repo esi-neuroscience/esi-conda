@@ -31,7 +31,7 @@ jobs:
       - name: Using Minimamba
         uses: mamba-org//setup-micromamba@v3
         with:
-          environment-file: ${{ ecEnv_file }}
+          environment-file: ${{ env.ecEnv_file }}
           post-cleanup: 'all'
       - name: Activate environment ${{ env.ecEnv_x86 }} and run tests on ${{ matrix.os }}
         run: |
