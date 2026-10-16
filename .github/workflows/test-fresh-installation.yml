@@ -29,13 +29,13 @@ jobs:
       - name: Download repository
         uses: actions/checkout@v3
       - name: Using Minimamba
-        uses: mamba-org//setup-micromamba@v3
+        uses: mamba-org/setup-micromamba@v3
         with:
           environment-file: ${{ env.ecEnv_file }}
           post-cleanup: 'all'
       - name: Activate environment ${{ env.ecEnv_x86 }} and run tests on ${{ matrix.os }}
         run: |
           ${{ matrix.prepare_shell }}
-          conda activate ${{ env.ecEnv_x86 }}
+          micromamba activate ${{ env.ecEnv_x86 }}
           pytest -sv
-          conda deactivate ${{ env.ecEnv_x86 }}
+          micromamba deactivate ${{ env.ecEnv_x86 }}
